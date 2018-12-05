@@ -1,4 +1,6 @@
 language: node_js
+node_js:
+  - "stable"
 
 notifications:
   email: false
@@ -23,6 +25,4 @@ deploy:
   on:
     branch: development
 
-cache:
-  directories:
-  - node_modules
+cache: yarn
