@@ -16,6 +16,10 @@ script:
   - yarn test
   - yarn flow
 
+after_success:
+  - git config credential.helper "store --file=.git/credentials"
+  - echo "https://$GITHUB_TOKEN:@github.com" > .git/credentials
+
 deploy:
   provider: script
   script: yarn deploy
