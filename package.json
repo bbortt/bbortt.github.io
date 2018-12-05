@@ -2,7 +2,7 @@
   "name": "bbortt.github.io",
   "version": "0.2.0",
   "private": false,
-  "homepage": "https://bbortt.github.io/public",
+  "homepage": "https://bbortt.github.io",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
