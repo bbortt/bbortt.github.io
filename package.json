@@ -4,8 +4,9 @@
   "private": false,
   "homepage": "https://bbortt.github.io",
   "scripts": {
-    "start": "react-scripts start",
+    "start": "yarn serve",
     "build": "react-scripts build",
+    "serve": "react-scripts start",
     "test": "react-scripts test",
     "flow": "flow",
     "predeploy": "yarn build",
@@ -13,6 +14,7 @@
     "eject": "react-scripts eject"
   },
   "dependencies": {
+    "node-sass": "^4.10.0",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-scripts": "2.1.1"
