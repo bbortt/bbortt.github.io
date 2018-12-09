@@ -14,10 +14,14 @@
     "eject": "react-scripts eject"
   },
   "dependencies": {
+    "bootstrap": "4",
+    "jquery": "^3.3.1",
     "node-sass": "^4.10.0",
+    "popper.js": "^1.14.6",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
-    "react-scripts": "2.1.1"
+    "react-scripts": "2.1.1",
+    "reactstrap": "^6.5.0"
   },
   "devDependencies": {
     "flow-bin": "^0.87.0",
