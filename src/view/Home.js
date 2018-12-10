@@ -1,3 +1,4 @@
+// @flow
 import React, {Component} from 'react';
 
 import './Home.scss';
@@ -7,7 +8,9 @@ type Props = { /* ... */ };
 class Home extends Component<Props> {
   render() {
     return (
-      <h1>Hello World</h1>
+      <div className='Home'>
+        <h1>About being me.</h1>
+      </div>
     );
   }
 }

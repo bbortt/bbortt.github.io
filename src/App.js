@@ -1,8 +1,6 @@
 // @flow
 import React, {Component} from 'react';
 
-import Home from './view/Home';
-
 import './App.scss';
 
 type Props = { /* ... */ };
@@ -12,7 +10,6 @@ class App extends Component<Props> {
     return (
       <div className='App'>
         <div className='container'>
-          <Home/>
         </div>
       </div>
     );
