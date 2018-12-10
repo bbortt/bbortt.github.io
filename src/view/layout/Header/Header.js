@@ -1,8 +1,6 @@
 // @flow
 import React, {Component} from 'react';
 
-import * as key from '../../keys/timon_borter.asc';
-
 import './Header.scss';
 
 type Props = { /* ... */ };
