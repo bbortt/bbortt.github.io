@@ -1,19 +1,18 @@
 import Home from './view/Home';
-import About from './view/About/About';
+import Projects from './view/Projects/Projects';
 import KeyList from './view/KeyList/KeyList';
 
 export const routes = [
   {
-    exact: true,
-    path: "/",
+    path: '/',
     component: Home
   },
   {
-    path: "/",
-    component: About
+    path: '/',
+    component: Projects
   },
   {
-    path: "/",
+    path: '/',
     component: KeyList
   }
 ];
