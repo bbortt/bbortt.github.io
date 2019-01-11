@@ -12,32 +12,32 @@ class Projects extends Component<Props> {
         <h1>Projects. <small className='text-muted'>Think open.</small></h1>
 
         <div className='row'>
-          <div className='col-sm'>
+          <div className='col-sm-2'>
             Citrus Simulator
           </div>
-          <div className='col'>
+          <div className='col text-italic'>
             Standalone simulator for different messaging transports.
           </div>
         </div>
         <div className='row'>
-          <div className='col-sm'>
+          <div className='col-sm-2'>
             Angular
           </div>
-          <div className='col'>
+          <div className='col text-italic'>
             One framework. Mobile & desktop.
           </div>
         </div>
         <div className='row'>
-          <div className='col-sm'>
+          <div className='col-sm-2'>
             TBME TV
           </div>
-          <div className='col'>
+          <div className='col text-italic'>
             An open source streaming application.
           </div>
         </div>
         <div className='row'>
-          <div className='col-sm'/>
-          <div className='col text-muted'>
+          <div className='col-sm-2'/>
+          <div className='col text-muted text-italic'>
             Project archived (read-only), no more supporters.
           </div>
         </div>
