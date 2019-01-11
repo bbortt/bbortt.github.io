@@ -9,7 +9,6 @@ class Home extends Component<Props> {
   render() {
     return (
       <div className='Home'>
-        <h1>About being me.</h1>
       </div>
     );
   }
