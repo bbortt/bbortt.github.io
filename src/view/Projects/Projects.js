@@ -13,10 +13,10 @@ class Projects extends Component<Props> {
 
         <div className='row'>
           <div className='col-sm-2'>
-            Citrus Simulator
+            next-redux-saga
           </div>
           <div className='col text-italic'>
-            Standalone simulator for different messaging transports.
+            Redux-Saga (alternative side effect model for Redux) integration for Next.js.
           </div>
         </div>
         <div className='row'>
