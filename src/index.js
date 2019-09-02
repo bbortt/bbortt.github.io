@@ -4,6 +4,9 @@ import ReactDOM from 'react-dom';
 import App from './App';
 
 import './index.scss';
+
+import 'jquery/dist/jquery.min';
+import 'popper.js/dist/popper.min';
 import 'bootstrap/dist/js/bootstrap.min';
 
 import * as serviceWorker from './serviceWorker';
