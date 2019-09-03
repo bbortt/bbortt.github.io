@@ -1,5 +1,6 @@
 // @flow
 import React, {Component} from 'react';
+import Loadable from 'react-loadable';
 
 import About from '../components/home/about';
 import KeyList from '../components/home/key-list';
@@ -17,4 +18,7 @@ class Home extends Component<Props> {
   }
 }
 
-export default Home;
+export default Loadable({
+  loader: () => Promise.resolve(Home),
+  loading: () => <div>Loading...</div>
+});

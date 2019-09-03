@@ -1,5 +1,6 @@
 // @flow
 import React, {Component} from 'react';
+import Loadable from 'react-loadable';
 
 import Project from '../../components/projects/project'
 
@@ -29,4 +30,7 @@ class Projects extends Component<Props> {
   }
 }
 
-export default Projects;
+export default Loadable({
+  loader: () => Promise.resolve(Projects),
+  loading: () => <div>Loading...</div>
+});

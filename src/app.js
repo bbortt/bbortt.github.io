@@ -2,8 +2,8 @@
 import React, {Component} from 'react';
 import {BrowserRouter} from 'react-router-dom';
 
-import Footer from './container/layout/footer';
 import Header from './container/layout/header';
+import Footer from './container/layout/footer';
 
 import Router from './router';
 
