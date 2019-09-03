@@ -1,5 +1,6 @@
 // @flow
 import React, {Component} from 'react';
+import {NavLink} from 'react-router-dom';
 
 import MaybeActiveLink from '../../../components/layout/maybe-active-link';
 
@@ -12,7 +13,10 @@ class Header extends Component<Props> {
         return (
             <div className='header'>
                 <nav className='navbar navbar-expand-lg navbar-light bg-light'>
-                    <a href='/' className='navbar-brand'><h1>bbortt</h1></a>
+                    <NavLink exact to='/' className='nav-link navbar-brand'>
+                        <h1>bbortt</h1>
+                    </NavLink>
+
                     <button className='navbar-toggler' type='button' data-toggle='collapse'
                             data-target='#navbarTogglerDemo02'
                             aria-controls='navbarTogglerDemo02' aria-expanded='false' aria-label='Toggle navigation'>
