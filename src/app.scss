@@ -1,5 +1,10 @@
-html, body, #root, .App {
-  margin-bottom: 10vh;
+html, body, #root, .app {
+  @media screen and (orientation: portrait) {
+    margin-bottom: 10vh;
+  }
+  @media screen and (orientation: landscape) {
+    margin-bottom: 20vh;
+  }
 
   font-size: 1em;
   font-family: 'Courier New', Courier, sans-serif;
