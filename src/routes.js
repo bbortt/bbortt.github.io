@@ -1,15 +1,26 @@
 // @flow
-import Home from './container/home';
-import Projects from './container/projects';
+import React from 'react';
+
+import Loadable from 'react-loadable';
+
+const AsyncHome = Loadable({
+  loader: () => import ('./container/home'),
+  loading: () => <div>Loading...</div>
+});
+
+const AsyncProjects = Loadable({
+  loader: () => import ('./container/projects'),
+  loading: () => <div>Loading...</div>
+});
 
 export const routes = [
   {
     path: '/',
     exact: true,
-    component: Home
+    component: AsyncHome
   },
   {
     path: '/projects',
-    component: Projects
+    component: AsyncProjects
   }
 ];

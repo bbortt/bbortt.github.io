@@ -30,7 +30,4 @@ class Projects extends Component<Props> {
   }
 }
 
-export default Loadable({
-  loader: () => Promise.resolve(Projects),
-  loading: () => <div>Loading...</div>
-});
+export default Projects;

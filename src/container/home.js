@@ -18,7 +18,4 @@ class Home extends Component<Props> {
   }
 }
 
-export default Loadable({
-  loader: () => Promise.resolve(Home),
-  loading: () => <div>Loading...</div>
-});
+export default Home;
