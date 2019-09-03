@@ -11,15 +11,19 @@ class Projects extends Component<Props> {
             <div className='projects'>
                 <h2>Projects. <small className='text-muted'>Think open.</small></h2>
 
-                <Project title='Citrus Simulator'
+                <Project title='zeit/next.js' link='https://github.com/zeit/next.js'
+                         description='The React framework.'/>
+                <Project title='citrusframework/citrus-simulator'
+                         link='https://github.com/citrusframework/citrus-simulator'
                          description='Standalone simulator for different messaging transports.'/>
-                <Project title='next-redux-saga'
+                <Project title='bmealhouse/next-redux-saga' link='https://github.com/bmealhouse/next-redux-saga'
                          description='Redux-Saga (alternative side effect model for Redux) integration for Next.js.'/>
-                <Project title='Angular' description='One framework. Mobile & desktop.'/>
-                <Project title='TBME TV' description='An open source streaming application.'
+                <Project title='angular/angular' link='https://github.com/angular/angular'
+                         description='One framework. Mobile & desktop.'
+                         detail='And various other Angular related packages.'/>
+                <Project title='tbmelabs/tbme-tv' link='https://github.com/tbmelabs/tbme-tv'
+                         description='An open source streaming application.'
                          detail='Project archived (read-only), no more supporters.'/>
-
-                <br/>
 
                 <p>
                     Visit me on <a href='https://github.com/bbortt'><span className='text-github'>GitHub</span></a>. I
