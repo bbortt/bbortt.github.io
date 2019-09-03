@@ -7,8 +7,8 @@ class About extends Component<Props> {
     render() {
         return (
             <div className='about'>
-                <h2>About me.
-                    <small className='text-muted'>Student, Programmer & Performance Nerd.
+                <h2>About me.&nbsp;
+                    <small className='text-muted'>Student, Programmer & Performance Nerd.&nbsp;
                         <span role='img' aria-label='rocket-icon' alt='Little rocket.'>&#128640;</span>
                     </small>
                 </h2>

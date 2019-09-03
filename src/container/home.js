@@ -2,8 +2,12 @@
 import React, {Component} from 'react';
 
 import About from '../components/home/about';
-import KeyList from '../components/home/key-list';
 import MeFace from '../components/home/me-face';
+
+import Connect from '../components/home/connect';
+import KeyList from '../components/home/key-list';
+
+import './home.scss'
 
 type Props = { /* ... */ };
 
@@ -14,11 +18,22 @@ class Home extends Component<Props> {
                 <div className='row'>
                     <div className='col-sm-8'>
                         <About/>
-                        <KeyList/>
                     </div>
 
                     <div className='col-sm-4'>
                         <MeFace/>
+                    </div>
+                </div>
+
+                <div className='row'>
+                    <div className='col'>
+                        <Connect/>
+                    </div>
+                </div>
+
+                <div className='row'>
+                    <div className='col'>
+                        <KeyList/>
                     </div>
                 </div>
             </div>
