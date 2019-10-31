@@ -1,6 +1,6 @@
 // @flow
 import React, {Component} from 'react';
-import {BrowserRouter} from 'react-router-dom';
+import {HashRouter} from 'react-router-dom';
 
 import Header from './container/layout/header';
 import Footer from './container/layout/footer';
@@ -15,7 +15,7 @@ class App extends Component<Props> {
     render() {
         return (
             <div className='app'>
-                <BrowserRouter>
+                <HashRouter>
                     <Header/>
 
                     <div className='container'>
@@ -23,7 +23,7 @@ class App extends Component<Props> {
                     </div>
 
                     <Footer/>
-                </BrowserRouter>
+                </HashRouter>
             </div>
         );
     }
