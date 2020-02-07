@@ -14,8 +14,8 @@ class KeyList extends Component<Props> {
                 </h2>
 
                 <p>
-                    My GPG Fingerprint: <a href={key} className='text-underline'>AD1C 31DD 0E4E CA51 8621 1131 5571 6D6C
-                    12B6 6B41</a>.
+                    My GPG Fingerprint: <a href={key} className='text-underline'>624D F4DC 4729 9F8C 273A CDF3 EA08 2DF7
+                    4988 780F</a>.
                 </p>
             </div>
         );

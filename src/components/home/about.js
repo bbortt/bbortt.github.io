@@ -8,7 +8,7 @@ class About extends Component<Props> {
         return (
             <div className='about'>
                 <h2>About me.&nbsp;
-                    <small className='text-muted'>Student, Programmer & Performance Nerd.&nbsp;
+                    <small className='text-muted'>Student, Programmer & Open Source Enthusiast.&nbsp;
                         <span role='img' aria-label='rocket-icon' alt='Little rocket.'>&#128640;</span>
                     </small>
                 </h2>

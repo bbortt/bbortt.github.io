@@ -13,6 +13,16 @@ const AsyncProjects = Loadable({
     loading: () => <div>Loading...</div>
 });
 
+const AsyncSocial = Loadable({
+    loader: () => import ('./container/social'),
+    loading: () => <div>Loading...</div>
+});
+
+const AsyncPGP = Loadable({
+    loader: () => import ('./container/key-list'),
+    loading: () => <div>Loading...</div>
+});
+
 export const routes = [
     {
         path: '/',
@@ -22,5 +32,13 @@ export const routes = [
     {
         path: '/projects',
         component: AsyncProjects
+    },
+    {
+        path: '/social',
+        component: AsyncSocial
+    },
+    {
+        path: '/pgp',
+        component: AsyncPGP
     }
 ];

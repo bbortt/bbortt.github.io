@@ -1,11 +1,8 @@
 // @flow
 import React, {Component} from 'react';
 
-import About from '../components/home/about';
-import MeFace from '../components/home/me-face';
-
-import Connect from '../components/home/connect';
-import KeyList from '../components/home/key-list';
+import About from '../../components/home/about';
+import MeFace from '../../components/home/me-face';
 
 import './home.scss'
 
@@ -22,18 +19,6 @@ class Home extends Component<Props> {
 
                     <div className='col-sm-4'>
                         <MeFace/>
-                    </div>
-                </div>
-
-                <div className='row'>
-                    <div className='col'>
-                        <Connect/>
-                    </div>
-                </div>
-
-                <div className='row'>
-                    <div className='col'>
-                        <KeyList/>
                     </div>
                 </div>
             </div>

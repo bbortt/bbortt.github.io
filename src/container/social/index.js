@@ -1,17 +1,17 @@
 // @flow
 import React, {Component} from 'react';
 
-import github from '../../assets/social/GitHub-Mark-120px-plus.png'
-import twitter from '../../assets/social/Twitter_Social_Icon_Circle_Color.png'
+import github from "../../assets/social/GitHub-Mark-120px-plus.png";
+import twitter from "../../assets/social/Twitter_Social_Icon_Circle_Color.png";
 
-import './connect.scss'
+import "./social.scss"
 
-type Props = { /* ... */ }
+type Props = { /* ... */ };
 
-class Connect extends Component<Props> {
+class Social extends Component<Props> {
     render() {
         return (
-            <div className='connect'>
+            <div className='social'>
                 <h2>Connect.&nbsp;
                     <small className='text-muted'>Visit me on my pages.</small>
                 </h2>
@@ -28,4 +28,4 @@ class Connect extends Component<Props> {
     }
 }
 
-export default Connect;
+export default Social;

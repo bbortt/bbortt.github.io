@@ -9,15 +9,20 @@ class Projects extends Component<Props> {
     render() {
         return (
             <div className='projects'>
-                <h2>Projects. <small className='text-muted'>Think open.</small></h2>
+                <h2>Projects <small className='text-muted'>I maintain.</small></h2>
+                <Project title='@mat-datetimepicker' link='https://github.com/kuhnroyal/mat-datetimepicker'
+                         description='Material datetimepicker for @angular/material.'/>
+                <Project title='bmealhouse/next-redux-saga' link='https://github.com/bmealhouse/next-redux-saga'
+                         description='Redux-Saga (alternative side effect model for Redux) integration for Next.js.'/>
 
+                <br/>
+
+                <h2>Stuff <small className='text-muted'>I'm working on.</small></h2>
                 <Project title='zeit/next.js' link='https://github.com/zeit/next.js'
                          description='The React framework.'/>
                 <Project title='citrusframework/citrus-simulator'
                          link='https://github.com/citrusframework/citrus-simulator'
                          description='Standalone simulator for different messaging transports.'/>
-                <Project title='bmealhouse/next-redux-saga' link='https://github.com/bmealhouse/next-redux-saga'
-                         description='Redux-Saga (alternative side effect model for Redux) integration for Next.js.'/>
                 <Project title='angular/angular' link='https://github.com/angular/angular'
                          description='One framework. Mobile & desktop.'
                          detail='And various other Angular related packages.'/>

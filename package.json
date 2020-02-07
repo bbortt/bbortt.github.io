@@ -1,9 +1,9 @@
 {
   "name": "bbortt.github.io",
-  "version": "1.0.0",
   "homepage": "https://bbortt.github.io",
   "repository": "https://github.com/bbortt/bbortt.github.io",
   "license": "MIT",
+  "private": true,
   "scripts": {
     "start": "npm run serve",
     "build": "react-scripts build",
@@ -18,19 +18,19 @@
     "upgrade-interactive": "npm-check --update"
   },
   "dependencies": {
-    "bootstrap": ">=4.3.1",
+    "bootstrap": "^4.4.1",
     "jquery": "^3.4.1",
-    "node-sass": "^4.12.0",
-    "popper.js": "^1.15.0",
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0",
+    "node-sass": "^4.13.1",
+    "popper.js": "^1.16.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
     "react-loadable": "^5.5.0",
-    "react-router-dom": "^5.0.1",
-    "react-scripts": "^3.1.1"
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "^3.3.1"
   },
   "devDependencies": {
-    "flow-bin": "^0.106.3",
-    "gh-pages": "^2.1.1",
+    "flow-bin": "^0.118.0",
+    "gh-pages": "^2.2.0",
     "npm-check": "^5.9.0"
   },
   "eslintConfig": {

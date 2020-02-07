@@ -6,7 +6,6 @@ import App from './app';
 import './index.scss';
 
 import 'jquery/dist/jquery.min';
-import 'popper.js/dist/popper.min';
 import 'bootstrap/dist/js/bootstrap.min';
 
 import * as serviceWorker from './serviceWorker';
