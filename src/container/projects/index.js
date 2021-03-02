@@ -10,6 +10,9 @@ class Projects extends Component<Props> {
     return (
       <div className='projects'>
         <h2>Projects <small className='text-muted'>I maintain.</small></h2>
+        <Project title='@bbortt/owl'
+                 link='https://github.com/bbortt/owl'
+                 description='GIT hooks made easy.'/>
         <Project title='@postfinance/ngx-ace-editor-wrapper'
                  link='https://github.com/postfinance/ngx-ace-editor-wrapper'
                  description='Ace editor integration with TypeScript for Angular.'/>
@@ -33,6 +36,10 @@ class Projects extends Component<Props> {
         <br/>
 
         <h2>Others <small className='text-muted'>That reached EOL.</small></h2>
+        <Project title='@postfinance/ngx-material-file-input'
+                 link='https://github.com/postfinance/ngx-material-file-input'
+                 description='Redux-Saga (alternative side effect model for Redux) integration for Next.js.'
+                 detail="No longer maintained."/>
         <Project title='bmealhouse/next-redux-saga' link='https://github.com/bmealhouse/next-redux-saga'
                  description='Redux-Saga (alternative side effect model for Redux) integration for Next.js.'
                  detail="No longer maintained."/>

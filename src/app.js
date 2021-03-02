@@ -12,21 +12,21 @@ import './app.scss';
 type Props = { /* ... */ };
 
 class App extends Component<Props> {
-    render() {
-        return (
-            <div className='app'>
-                <HashRouter>
-                    <Header/>
+  render() {
+    return (
+      <div className='app'>
+        <HashRouter>
+          <Header/>
 
-                    <div className='container'>
-                        <Router/>
-                    </div>
+          <div className='container'>
+            <Router/>
+          </div>
 
-                    <Footer/>
-                </HashRouter>
-            </div>
-        );
-    }
+          <Footer/>
+        </HashRouter>
+      </div>
+    );
+  }
 }
 
 export default App;
