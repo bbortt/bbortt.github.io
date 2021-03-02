@@ -6,14 +6,14 @@
   "private": true,
   "scripts": {
     "start": "npm run serve",
-    "build": "react-scripts build",
+    "build": "react-scripts build --prod",
     "serve": "react-scripts start",
     "test": "react-scripts test",
     "flow:check": "flow check",
     "flow:start": "flow start",
     "flow:stop": "flow stop",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build",
+    "prepublishOnly": "npm run build",
+    "publish": "gh-pages -b master -d build",
     "eject": "react-scripts eject",
     "upgrade-interactive": "npm-check --update"
   },
