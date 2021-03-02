@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/container/social/social.scss"],"names":[],"mappings":"AAAA,+BAEI,gBAAiB,CAFrB,4CAKM,eAAgB,CAChB,cAAe","file":"5.414d8145.chunk.css","sourcesContent":[".social {\r\n  .social-mark-container {\r\n    margin-right: 2vw;\r\n\r\n    .social-mark {\r\n      max-height: 50px;\r\n      max-width: 50px;\r\n    }\r\n  }\r\n}\r\n"]}
