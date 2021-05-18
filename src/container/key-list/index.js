@@ -11,8 +11,8 @@ export const KeyList: Component<Props> = () => (
 
     <p>
       My GPG Fingerprint: <a
-      href='https://raw.githubusercontent.com/bbortt/bbortt.github.io/development/src/keys/timon_borter.asc'
-      download className='text-underline'>624D F4DC 4729 9F8C 273A CDF3 EA08 2DF7 4988 780F</a>.
+      href='https://raw.githubusercontent.com/bbortt/bbortt.github.io/development/src/keys/timon.borter@gmx.ch.pub.asc'
+      download className='text-underline'>56F2 F201 10FB 2596 02C9  2909 D4D4 5C59 4036 DD74</a>.
     </p>
   </div>
 );
