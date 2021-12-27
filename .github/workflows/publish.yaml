@@ -17,4 +17,4 @@ jobs:
           cache: 'npm'
           node-version: '16'
       - run: npm ci
-      - run: npm run publish
+      - run: npm publish
