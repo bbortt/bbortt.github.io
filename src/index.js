@@ -5,7 +5,6 @@ import App from './app';
 
 import './index.scss';
 
-import 'jquery/dist/jquery.min';
 import 'bootstrap/dist/js/bootstrap.min';
 
 import * as serviceWorker from './serviceWorker';

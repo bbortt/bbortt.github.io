@@ -27,18 +27,18 @@ export const routes = [
   {
     path: '/',
     exact: true,
-    component: AsyncHome
+    element: <AsyncHome/>
   },
   {
     path: '/projects',
-    component: AsyncProjects
+    element: <AsyncProjects/>
   },
   {
     path: '/social',
-    component: AsyncSocial
+    element: <AsyncSocial/>
   },
   {
     path: '/pgp',
-    component: AsyncPGP
+    element: <AsyncPGP/>
   }
 ];

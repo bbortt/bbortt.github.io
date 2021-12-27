@@ -6,10 +6,10 @@ type Props = { /* ... */ };
 class About extends Component<Props> {
   render() {
     return (
-      <div className='about'>
+      <div className="about">
         <h2>About me.&nbsp;
-          <small className='text-muted'>Student, Programmer & Open Source Enthusiast.&nbsp;
-            <span role='img' aria-label='rocket-icon' alt='Little rocket.'>&#128640;</span>
+          <small className="text-muted">Student, Programmer & Open Source Enthusiast.&nbsp;
+            <span role="img" aria-label="rocket-icon" alt="Little rocket.">&#128640;</span>
           </small>
         </h2>
 

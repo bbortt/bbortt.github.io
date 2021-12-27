@@ -15,9 +15,9 @@ class MaybeActiveLink extends Component<Props> {
     const {href, text} = this.props;
 
     return (
-      <div className='maybe-active-link'>
-        <li className='nav-item'>
-          <NavLink exact to={href} className='nav-link' activeClassName='active'>
+      <div className="maybe-active-link">
+        <li className="nav-item">
+          <NavLink to={href} className={({isActive}) => `nav-link ${isActive && 'active'}`}>
             {text}
           </NavLink>
         </li>

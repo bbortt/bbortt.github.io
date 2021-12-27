@@ -15,21 +15,21 @@ class Project extends Component<Props> {
     const {title, description, link, detail} = this.props;
 
     return (
-      <div className='project'>
-        <div className='row'>
-          <div className='col-sm-4'>
+      <div className="project">
+        <div className="row">
+          <div className="col-sm-4">
             {link ? <a href={link}>{title}</a> : title}
           </div>
-          <div className='col text-italic'>
+          <div className="col text-italic">
             {description}
           </div>
         </div>
 
         {
           detail ? (
-            <div className='row'>
-              <div className='col-sm-4'/>
-              <div className='col text-muted text-italic'>
+            <div className="row">
+              <div className="col-sm-4"/>
+              <div className="col text-muted text-italic">
                 {detail}
               </div>
             </div>

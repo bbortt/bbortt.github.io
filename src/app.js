@@ -1,6 +1,6 @@
 // @flow
 import React, {Component} from 'react';
-import {HashRouter} from 'react-router-dom';
+import {BrowserRouter} from 'react-router-dom';
 
 import Header from './container/layout/header';
 import Footer from './container/layout/footer';
@@ -14,16 +14,16 @@ type Props = { /* ... */ };
 class App extends Component<Props> {
   render() {
     return (
-      <div className='app'>
-        <HashRouter>
+      <div className="app">
+        <BrowserRouter>
           <Header/>
 
-          <div className='container'>
+          <div className="container">
             <Router/>
           </div>
 
           <Footer/>
-        </HashRouter>
+        </BrowserRouter>
       </div>
     );
   }
