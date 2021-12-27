@@ -1,0 +1,20 @@
+name: Publish
+on:
+  push:
+    branches:
+      - development
+jobs:
+  publish:
+    name: Publish to GitHub Pages
+    runs-on: ubuntu-20.04
+    environment: build
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.ACTION_TOKEN }}
+      - uses: actions/setup-node@v2
+        with:
+          cache: 'npm'
+          node-version: '16'
+      - run: npm ci
+      - run: npm run publish
