@@ -10,8 +10,6 @@ jobs:
     environment: build
     steps:
       - uses: actions/checkout@v2
-        with:
-          token: ${{ secrets.ACTION_TOKEN }}
       - uses: actions/setup-node@v2
         with:
           cache: 'npm'
@@ -19,3 +17,5 @@ jobs:
       - run: npm ci
       - run: npm run build
       - run: npm run publish
+        env:
+          GITHUB_TOKEN: ${{ secrets.ACTION_TOKEN }}
