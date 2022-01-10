@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack://src/components/projects/project.scss"],"names":[],"mappings":"AAAA,SACE,iBAAkB,CADpB,WAII,cAAe,CAJnB,sBAQI,iBAAkB","file":"4.b90b1324.chunk.css","sourcesContent":[".project {\r\n  margin-bottom: 2vh;\r\n\r\n  a {\r\n    cursor: pointer;\r\n  }\r\n\r\n  .text-italic {\r\n    font-style: italic;\r\n  }\r\n}\r\n"]}
