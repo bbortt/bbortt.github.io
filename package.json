@@ -13,7 +13,6 @@
     "flow:start": "flow start",
     "flow:status": "flow status",
     "flow:stop": "flow stop",
-    "publish": "gh-pages -u \"GitHub Actions Bot <actions@github.com>\" -b master -d build",
     "eject": "react-scripts eject",
     "upgrade-interactive": "npm-check --update"
   },

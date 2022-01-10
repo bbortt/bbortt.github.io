@@ -16,6 +16,8 @@ jobs:
           node-version: '16'
       - run: npm ci
       - run: npm run build
-      - run: npm run publish
+      - run: |
+          git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+          npx gh-pages -u "GitHub Actions Bot <actions@github.com>" -b master -d build
         env:
           GITHUB_TOKEN: ${{ secrets.ACTION_TOKEN }}
