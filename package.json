@@ -26,7 +26,7 @@
     "react-scripts": "^5.0.0"
   },
   "devDependencies": {
-    "flow-bin": "^0.174.1",
+    "flow-bin": "^0.175.0",
     "gh-pages": "^3.2.3",
     "npm-check": "^5.9.2"
   },
