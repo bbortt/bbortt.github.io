@@ -18,13 +18,10 @@ export const Projects: Component<Props> = () => (
 
     <br/>
 
-    <h2>Stuff <small className="text-muted">I'm working on.</small></h2>
-    <Project title="@postfinance/ngx-ace-editor-wrapper"
-             link="https://github.com/postfinance/ngx-ace-editor-wrapper"
-             description="Ace editor integration with TypeScript for Angular."/>
+    <h2>Projects <small className="text-muted">I contribute to.</small></h2>
     <Project title="@postfinance/polling-swagger-ui"
              link="https://github.com/postfinance/polling-swagger-ui"
-             description="Ace editor integration with TypeScript for Angular."/>
+             description="A Swagger-UI which periodically polls configuration from an URL. "/>
     <Project title="vercel/next.js" link="https://github.com/vercel/next.js"
              description="The React framework." detail="Previously zeit/next.js."/>
     <Project title="citrusframework/citrus"
@@ -33,9 +30,12 @@ export const Projects: Component<Props> = () => (
     <Project title="citrusframework/citrus-simulator"
              link="https://github.com/citrusframework/citrus-simulator"
              description="Standalone simulator for different messaging transports."/>
-    <Project title="angular/angular" link="https://github.com/angular/angular"
-             description="One framework. Mobile & desktop."
-             detail="And various other Angular related packages."/>
+      <Project title="@postfinance/ngx-ace-editor-wrapper"
+               link="https://github.com/postfinance/ngx-ace-editor-wrapper"
+               description="Ace editor integration with TypeScript for Angular."/>
+      <Project title="angular/angular" link="https://github.com/angular/angular"
+               description="One framework. Mobile & desktop."
+               detail="And various other Angular related packages."/>
 
     <br/>
 
