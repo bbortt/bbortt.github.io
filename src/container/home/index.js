@@ -6,6 +6,7 @@ import GithubStatus from '../../components/home/github-status';
 import MeFace from '../../components/home/me-face';
 
 import './home.scss'
+import Resume from "../../components/home/resume";
 
 type Props = { /* ... */ };
 
@@ -16,6 +17,10 @@ export const Home: Component<Props> = () => (
         <About/>
 
         <GithubStatus/>
+
+        <br/>
+
+        <Resume/>
       </div>
 
       <div className="col-sm-4">
