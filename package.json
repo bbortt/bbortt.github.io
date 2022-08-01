@@ -28,7 +28,7 @@
   "devDependencies": {
     "flow-bin": "^0.181.2",
     "gh-pages": "^4.0.0",
-    "npm-check": "^5.9.2"
+    "npm-check": "^6.0.1"
   },
   "eslintConfig": {
     "extends": "react-app"
