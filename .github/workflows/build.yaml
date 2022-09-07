@@ -1,0 +1,17 @@
+name: Build
+on:
+  push:
+    branches:
+      - '*/*'
+jobs:
+  publish:
+    name: Build UI
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3.4.1
+        with:
+          cache: 'npm'
+          node-version: '16'
+      - run: npm ci
+      - run: npm run build
