@@ -1,1 +1,0 @@
-{"version":3,"file":"static/css/556.14c248b6.chunk.css","mappings":"AACE,+BACE,iBAEA,4CACE,gBACA","sources":["container/social/social.scss"],"sourcesContent":[".social {\n  .social-mark-container {\n    margin-right: 2vw;\n\n    .social-mark {\n      max-height: 50px;\n      max-width: 50px;\n    }\n  }\n}\n"],"names":[],"sourceRoot":""}
