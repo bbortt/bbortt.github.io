@@ -13,6 +13,11 @@ const AsyncProjects = Loadable({
   loading: () => <div>Loading...</div>
 });
 
+const AsyncPublications = Loadable({
+  loader: () => import ('./container/publications'),
+  loading: () => <div>Loading...</div>
+});
+
 const AsyncSocial = Loadable({
   loader: () => import ('./container/social'),
   loading: () => <div>Loading...</div>
@@ -32,6 +37,10 @@ export const routes = [
   {
     path: '/projects',
     element: <AsyncProjects/>
+  },
+  {
+    path: '/publications',
+    element: <AsyncPublications/>
   },
   {
     path: '/social',
