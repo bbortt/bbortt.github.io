@@ -1,0 +1,4 @@
+src/assets/images/IMG_20190416_100232_1.jpg filter=lfs diff=lfs merge=lfs -text
+src/assets/publications/20230116_bfhthesis.pdf filter=lfs diff=lfs merge=lfs -text
+src/assets/social/GitHub-Mark-120px-plus.png filter=lfs diff=lfs merge=lfs -text
+src/assets/social/Twitter_Social_Icon_Circle_Color.png filter=lfs diff=lfs merge=lfs -text
