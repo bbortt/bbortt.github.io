@@ -24,6 +24,7 @@ export const Header: Component<Props> = () => (
           <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
             <MaybeActiveLink href="/" text="Home"/>
             <MaybeActiveLink href="/projects" text="Projects"/>
+            <MaybeActiveLink href="/publications" text="Publications"/>
             <MaybeActiveLink href="/social" text="Social"/>
             <MaybeActiveLink href="/pgp" text="PGP"/>
           </ul>
