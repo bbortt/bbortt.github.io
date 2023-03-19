@@ -8,9 +8,6 @@ type Props = { /* ... */ };
 export const Projects: Component<Props> = () => (
   <div className="projects">
     <h2>Projects <small className="text-muted">I maintain.</small></h2>
-    <Project title="@bbortt/owl"
-             link="https://github.com/bbortt/owl"
-             description="GIT hooks made easy."/>
     <Project title="@mat-datetimepicker" link="https://github.com/kuhnroyal/mat-datetimepicker"
              description="Material datetimepicker for @angular/material."/>
     <Project title="bbortt/event-planner" link="https://github.com/bbortt/event-planner"
@@ -22,24 +19,31 @@ export const Projects: Component<Props> = () => (
     <Project title="@postfinance/polling-swagger-ui"
              link="https://github.com/postfinance/polling-swagger-ui"
              description="A Swagger-UI which periodically polls configuration from an URL. "/>
-    <Project title="vercel/next.js" link="https://github.com/vercel/next.js"
-             description="The React framework." detail="Previously zeit/next.js."/>
     <Project title="citrusframework/citrus"
              link="https://github.com/citrusframework/citrus"
              description="Framework for automated integration tests with focus on messaging integration."/>
     <Project title="citrusframework/citrus-simulator"
              link="https://github.com/citrusframework/citrus-simulator"
              description="Standalone simulator for different messaging transports."/>
-      <Project title="@postfinance/ngx-ace-editor-wrapper"
-               link="https://github.com/postfinance/ngx-ace-editor-wrapper"
-               description="Ace editor integration with TypeScript for Angular."/>
-      <Project title="angular/angular" link="https://github.com/angular/angular"
-               description="One framework. Mobile & desktop."
-               detail="And various other Angular related packages."/>
+
+    <br/>
+
+    <h2>Projects <small className="text-muted">I sometimes work with.</small></h2>
+    <Project title="vercel/next.js" link="https://github.com/vercel/next.js"
+             description="The React framework." detail="Previously zeit/next.js."/>
+    <Project title="angular/angular" link="https://github.com/angular/angular"
+             description="One framework. Mobile & desktop."
+             detail="And various other Angular related packages."/>
 
     <br/>
 
     <h2>Others <small className="text-muted">That reached EOL.</small></h2>
+    <Project title="@bbortt/owl"
+             link="https://github.com/bbortt/owl"
+             description="GIT hooks made easy."/>
+    <Project title="@postfinance/ngx-ace-editor-wrapper"
+             link="https://github.com/postfinance/ngx-ace-editor-wrapper"
+             description="Ace editor integration with TypeScript for Angular."/>
     <Project title="@postfinance/ngx-material-file-input"
              link="https://github.com/postfinance/ngx-material-file-input"
              description="Redux-Saga (alternative side effect model for Redux) integration for Next.js."
