@@ -27,7 +27,7 @@
   },
   "devDependencies": {
     "flow-bin": "^0.251.1",
-    "gh-pages": "^6.1.1",
+    "gh-pages": "^6.2.0",
     "npm-check": "^6.0.1"
   },
   "eslintConfig": {
