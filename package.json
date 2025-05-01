@@ -17,7 +17,7 @@
     "upgrade-interactive": "npm-check --update"
   },
   "dependencies": {
-    "bootstrap": "^5.3.3",
+    "bootstrap": "^5.3.5",
     "node-sass": "^9.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.1.0",
