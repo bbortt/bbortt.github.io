@@ -1,32 +1,12 @@
 // @flow
 import React from 'react';
 
-import Loadable from 'react-loadable';
-
-const AsyncHome = Loadable({
-  loader: () => import ('./container/home'),
-  loading: () => <div>Loading...</div>
-});
-
-const AsyncProjects = Loadable({
-  loader: () => import ('./container/projects'),
-  loading: () => <div>Loading...</div>
-});
-
-const AsyncPublications = Loadable({
-  loader: () => import ('./container/publications'),
-  loading: () => <div>Loading...</div>
-});
-
-const AsyncSocial = Loadable({
-  loader: () => import ('./container/social'),
-  loading: () => <div>Loading...</div>
-});
-
-const AsyncPGP = Loadable({
-  loader: () => import ('./container/key-list'),
-  loading: () => <div>Loading...</div>
-});
+const AsyncHome = React.lazy(() => import('./container/home'));
+const AsyncProjects = React.lazy(() => import('./container/projects'));
+const AsyncTalks = React.lazy(() => import('./container/talks'));
+const AsyncPublications = React.lazy(() => import('./container/publications'));
+const AsyncSocial = React.lazy(() => import('./container/social'));
+const AsyncPGP = React.lazy(() => import('./container/key-list'));
 
 export const routes = [
   {
@@ -37,6 +17,10 @@ export const routes = [
   {
     path: '/projects',
     element: <AsyncProjects/>
+  },
+  {
+    path: '/talks',
+    element: <AsyncTalks/>
   },
   {
     path: '/publications',

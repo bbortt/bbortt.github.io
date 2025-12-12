@@ -10,8 +10,10 @@ export const Projects: Component<Props> = () => (
     <h2>Projects <small className="text-muted">I maintain.</small></h2>
     <Project title="@mat-datetimepicker" link="https://github.com/kuhnroyal/mat-datetimepicker"
              description="Material datetimepicker for @angular/material."/>
-    <Project title="bbortt/event-planner" link="https://github.com/bbortt/event-planner"
-             description="Event Planning Tool."/>
+    <Project title="bbortt/snow-white" link="https://github.com/bbortt/snow-white"
+             description="An awesome pairing with, well.. do you know Snow White and the Jaeger?"/>
+    <Project title="propeller" link="https://github.com/postfinance/propeller"
+             description="An automated secret rotation tool for Vault and Kubernetes."/>
 
     <br/>
 

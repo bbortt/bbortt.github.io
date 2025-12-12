@@ -10,12 +10,15 @@ jobs:
     environment: build
     steps:
       - uses: actions/checkout@v6
-      - uses: actions/setup-node@v6.0.0
+      - uses: pnpm/action-setup@v4
         with:
-          cache: 'npm'
-          node-version: '16'
-      - run: npm ci
-      - run: npm run build
+          run_install: false
+      - uses: actions/setup-node@v6
+        with:
+          cache: 'pnpm'
+          node-version: 24
+      - run: pnpm install
+      - run: pnpm run build
       - run: |
           git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
           npx gh-pages -u "GitHub Actions Bot <actions@github.com>" -b master -d build --cname timon-borter.ch
