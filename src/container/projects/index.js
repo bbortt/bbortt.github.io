@@ -8,10 +8,10 @@ type Props = { /* ... */ };
 export const Projects: Component<Props> = () => (
   <div className="projects">
     <h2>Projects <small className="text-muted">I maintain.</small></h2>
+    <Project title="Snow-White" to="/snow-white" link="https://github.com/bbortt/snow-white" featured
+             description="Verify your API actually does what its OpenAPI spec promises — OpenAPI × OpenTelemetry coverage and quality gates, and a ground-truth guardrail for agentic development."/>
     <Project title="@mat-datetimepicker" link="https://github.com/kuhnroyal/mat-datetimepicker"
              description="Material datetimepicker for @angular/material."/>
-    <Project title="bbortt/snow-white" link="https://github.com/bbortt/snow-white"
-             description="An awesome pairing with, well.. do you know Snow White and the Jaeger?"/>
     <Project title="propeller" link="https://github.com/postfinance/propeller"
              description="An automated secret rotation tool for Vault and Kubernetes."/>
 
@@ -40,6 +40,8 @@ export const Projects: Component<Props> = () => (
     <br/>
 
     <h2>Others <small className="text-muted">That reached EOL.</small></h2>
+    <Project title="event-planner" link="https://github.com/bbortt/event-planner"
+             description="Event planning tool."/>
     <Project title="@bbortt/owl"
              link="https://github.com/bbortt/owl"
              description="GIT hooks made easy."/>

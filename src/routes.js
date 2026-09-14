@@ -3,6 +3,7 @@ import React from 'react';
 
 const AsyncHome = React.lazy(() => import('./container/home'));
 const AsyncProjects = React.lazy(() => import('./container/projects'));
+const AsyncSnowWhite = React.lazy(() => import('./container/snow-white'));
 const AsyncTalks = React.lazy(() => import('./container/talks'));
 const AsyncPublications = React.lazy(() => import('./container/publications'));
 const AsyncSocial = React.lazy(() => import('./container/social'));
@@ -17,6 +18,10 @@ export const routes = [
   {
     path: '/projects',
     element: <AsyncProjects/>
+  },
+  {
+    path: '/snow-white',
+    element: <AsyncSnowWhite/>
   },
   {
     path: '/talks',

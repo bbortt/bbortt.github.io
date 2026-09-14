@@ -18,4 +18,5 @@ jobs:
           cache: 'pnpm'
           node-version: 24
       - run: pnpm install
+      - run: pnpm run flow:check
       - run: pnpm run build

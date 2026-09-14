@@ -1,11 +1,59 @@
 .project {
-  margin-bottom: 2vh;
+  margin-bottom: 1rem;
+  padding: 1rem 1.25rem;
 
-  a {
-    cursor: pointer;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background-color: var(--color-surface);
+  box-shadow: var(--shadow-sm);
+
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
   }
 
-  .text-italic {
+  &.project-featured {
+    border-color: var(--color-accent);
+    border-width: 2px;
+  }
+
+  .project-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .project-title {
+    margin: 0;
+    font-size: 1.1rem;
+
+    a {
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .project-external-link {
+    flex-shrink: 0;
+    font-size: 0.85rem;
+    white-space: nowrap;
+  }
+
+  .project-description {
+    margin: 0.35rem 0 0;
     font-style: italic;
+  }
+
+  .project-detail {
+    margin: 0.35rem 0 0;
+    font-size: 0.9rem;
   }
 }

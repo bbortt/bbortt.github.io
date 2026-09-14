@@ -1,27 +1,36 @@
 html, body, #root, .app {
-  @media screen and (orientation: portrait) {
-    margin-bottom: 10vh;
-  }
-  @media screen and (orientation: landscape) {
-    margin-bottom: 20vh;
-  }
+  overflow-x: hidden;
+
+  background-color: var(--color-bg);
+  color: var(--color-text);
 
   font-size: 1em;
-  font-family: 'Courier New', Courier, sans-serif;
+  font-family: var(--font-sans);
 
   .text-github {
     font-weight: bold;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   }
 
+  .text-muted {
+    color: var(--color-text-muted) !important;
+  }
+
   .container {
-    a {
-      color: black;
+    a:not(.btn) {
+      color: var(--color-accent);
       text-decoration: underline;
     }
 
-    a:hover {
-      color: grey;
+    a:not(.btn):hover {
+      color: var(--color-text);
     }
   }
+}
+
+a:focus-visible,
+button:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
 }

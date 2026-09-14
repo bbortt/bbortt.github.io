@@ -3,6 +3,17 @@
   <head>
     <meta charset="utf-8">
 
+    <script>
+      (function () {
+        var media = window.matchMedia('(prefers-color-scheme: dark)');
+        var applyTheme = function () {
+          document.documentElement.setAttribute('data-bs-theme', media.matches ? 'dark' : 'light');
+        };
+        applyTheme();
+        media.addEventListener('change', applyTheme);
+      })();
+    </script>
+
     <link rel="apple-touch-icon" sizes="57x57" href="%PUBLIC_URL%/favicons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="%PUBLIC_URL%/favicons/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="%PUBLIC_URL%/favicons/apple-icon-72x72.png">
@@ -18,10 +29,10 @@
     <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/favicons/favicon-16x16.png">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="%PUBLIC_URL%/favicons/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+    <meta name="theme-color" content="#fafafa" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#101012" media="(prefers-color-scheme: dark)">
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="theme-color" content="#000000">
     <!--
       manifest.json provides metadata used when your web app is added to the
       homescreen on Android. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -36,7 +47,46 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>Timon Borter</title>
+    <title>Borter Labs — Timon Borter</title>
+    <meta name="description"
+          content="Personal website of Timon Borter — software engineer, conference speaker, and founder of Borter Labs, building Snow-White.">
+    <link rel="canonical" href="https://timon-borter.ch/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Borter Labs — Timon Borter">
+    <meta property="og:description"
+          content="Personal website of Timon Borter — software engineer, conference speaker, and founder of Borter Labs, building Snow-White.">
+    <meta property="og:url" content="https://timon-borter.ch/">
+    <meta property="og:image" content="%PUBLIC_URL%/social-preview.jpg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Borter Labs — Timon Borter">
+    <meta name="twitter:description"
+          content="Personal website of Timon Borter — software engineer, conference speaker, and founder of Borter Labs, building Snow-White.">
+    <meta name="twitter:image" content="%PUBLIC_URL%/social-preview.jpg">
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Timon Borter",
+        "url": "https://timon-borter.ch/",
+        "jobTitle": "Software Engineer",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "PostFinance AG"
+        },
+        "founder": {
+          "@type": "Organization",
+          "name": "Borter Labs",
+          "url": "https://timon-borter.ch/"
+        },
+        "sameAs": [
+          "https://github.com/bbortt",
+          "https://twitter.com/timon_borter"
+        ]
+      }
+    </script>
   </head>
   <body>
     <noscript>

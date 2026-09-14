@@ -18,9 +18,9 @@ class App extends Component<Props> {
         <BrowserRouter>
           <Header/>
 
-          <div className="container">
+          <main className="container">
             <Router/>
-          </div>
+          </main>
 
           <Footer/>
         </BrowserRouter>

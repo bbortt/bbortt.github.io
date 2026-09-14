@@ -1,3 +1,25 @@
 .header {
   margin-bottom: 3vh;
+
+  .navbar-brand {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+
+    .navbar-brand-title {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--color-text);
+    }
+
+    .navbar-brand-subtitle {
+      font-size: 0.75rem;
+      font-weight: 400;
+      color: var(--color-text-muted);
+    }
+  }
+
+  .navbar-toggler {
+    border-color: var(--color-border);
+  }
 }
