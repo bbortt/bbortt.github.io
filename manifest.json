@@ -1,6 +1,6 @@
 {
-  "short_name": "bbortt",
-  "name": "Timon Borter's personal home page.",
+  "short_name": "Borter Labs",
+  "name": "Borter Labs — Timon Borter Personal Website",
   "icons": [
     {
       "src": "favicon.ico",
@@ -10,6 +10,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#111111",
+  "background_color": "#fafafa"
 }
