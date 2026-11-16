@@ -6,7 +6,7 @@
   "private": true,
   "scripts": {
     "start": "pnpm run serve",
-    "prebuild": "rimraf public",
+    "prebuild": "rimraf build",
     "build": "react-scripts build --prod",
     "serve": "react-scripts start",
     "test": "react-scripts test",

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://timon-borter.ch/sitemap.xml
